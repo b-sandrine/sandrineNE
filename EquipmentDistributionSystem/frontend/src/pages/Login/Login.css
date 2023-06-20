@@ -1,0 +1,214 @@
+.login--container {
+    width: 100%;
+    height: 99.99vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.login--container .static {
+    width: 648px;
+    margin-right: 120px;
+    text-align: center;
+    position: fixed;
+}
+
+.login--container .static img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.login--container .static .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 648px;
+    height: 99.99vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black color with 50% opacity */
+}
+
+.login--container .static .text-holder {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    width: 400px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+
+.login--container .content {
+    width: 50%;
+    position: absolute;
+    right: 100px;
+    top: 70px;
+    left: 705px;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+.login--container .content img {
+    margin-bottom: 40px;
+}
+
+.login--container .content .form {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.login--container .content .form input {
+    border: none;
+    width: 566px;
+    height: 43px;
+    left: 757px;
+    margin: 8px 0px;
+    padding: 10px;
+    top: 467px;
+    background: rgba(217, 217, 217, 0.76);
+    border-radius: 5px;
+}
+
+.login--container .content .form input[type='submit'] {
+    width: 256px;
+    color: white;
+    font-weight: 500;
+    background: #1D5FAB;
+    border-radius: 10px;
+}
+
+.login--container .content .footer-text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.login--container .content .footer-text span {
+    color: #1D5FAB;
+    margin-left: 5px;
+}
+
+@media(max-width: 428px) {
+    .login--container {
+        display: grid;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login--container .static img {
+        display: none;
+    }
+
+    .login--container .static .overlay {
+        display: none;
+    }
+
+    .login--container .static {
+        text-align: center;
+    }
+
+    .login--container .static .text-holder {
+        font-style: normal;
+        font-size: 16px;
+        color: #000;
+        position: absolute;
+        top: -300px;
+        left: -24px;
+    }
+
+    .login--container .static .text-holder h1 {
+        display: none;
+    }
+
+    .login--container .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+    }
+
+    .login--container .content img {
+        margin-top: 20px;
+    }
+
+    .login--container .content .form {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 30px;
+    }
+
+    .login--container .content .form input,
+    .login--container .content .form input[type=submit] {
+        width: 300px;
+    }
+}
+
+@media (min-width: 430px)and (max-width: 810px) {
+    .login--container {
+        display: grid;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login--container .static img {
+        display: none;
+    }
+
+    .login--container .static .overlay {
+        display: none;
+    }
+
+    .login--container .static {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        background-color: red;
+    }
+
+    .login--container .static .text-holder {
+        font-style: normal;
+        font-size: 16px;
+        color: #000;
+        position: absolute;
+        top: -380px;
+        left: 180px;
+    }
+
+    .login--container .static .text-holder h1 {
+        display: none;
+    }
+
+    .login--container .content {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        margin-top: 20px;
+    }
+
+    .login--container .content img {
+        margin-top: 20px;
+    }
+
+    .login--container .content .form {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 30px;
+    }
+
+    .login--container .content .form input,
+    .login--container .content .form input[type=submit] {
+        width: 80%;
+    }
+}

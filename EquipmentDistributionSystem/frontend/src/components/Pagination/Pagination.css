@@ -1,0 +1,11 @@
+.pagination--container {
+    display: flex;
+    margin-top: 10px;
+    width: 80px;
+    float: right;
+}
+
+.pagination--container ul {
+    list-style: none;
+    margin: 0 5px;
+}
