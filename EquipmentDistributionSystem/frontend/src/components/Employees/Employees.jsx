@@ -17,6 +17,7 @@ export default function Employees() {
         data,
         getAllEmployees
      } = useEmployees();
+    
     function openModal() {
         setIsOpen(true)
     }

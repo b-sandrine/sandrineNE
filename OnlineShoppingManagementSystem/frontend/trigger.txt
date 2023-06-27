@@ -1,0 +1,16 @@
+DELIMITER //
+
+CREATE TRIGGER calculate_total_price
+BEFORE INSERT ON purchased
+FOR EACH ROW
+BEGIN
+    DECLARE item_price DECIMAL(10, 2);
+
+    -- Retrieve the price of the purchased product
+    SELECT price INTO item_price FROM PRODUCT WHERE code = NEW.product_code;
+
+    -- Calculate the total price
+    SET NEW.total = item_price * NEW.quantity;
+END //
+
+DELIMITER ;

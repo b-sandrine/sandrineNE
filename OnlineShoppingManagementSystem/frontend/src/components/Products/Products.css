@@ -1,0 +1,58 @@
+.products--container .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.products--container .header button {
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.61);
+    border: none;
+    border-radius: 10px;
+}
+
+.products--container .table {
+    margin-top: 20px;
+}
+
+.products--container .table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products--container .table th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.products--container .table th {
+    background-color: #f2f2f2;
+}
+
+.products--container .table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.div {
+    display: none;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.61);
+    border: none;
+    border-radius: 10px;
+}
